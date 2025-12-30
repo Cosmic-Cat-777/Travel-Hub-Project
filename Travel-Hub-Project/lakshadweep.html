@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Lakshadweep | Travel-Hub</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Segoe UI", sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+/* ===== NAVBAR ===== */
+.navbar{
+    padding:15px 40px;
+    background:#222;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.brand{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo-circle{
+    width:36px;
+    height:36px;
+    background:#ff9800;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#fff;
+    font-weight:bold;
+}
+
+.brand-name{
+    font-size:22px;
+    font-weight:bold;
+    color:#ff9800;
+}
+
+.navbar a{
+    color:#fff;
+    text-decoration:none;
+    margin-left:25px;
+    font-size:14px;
+}
+
+.navbar a:hover{
+    color:#ff9800;
+}
+
+/* ===== LAYOUT ===== */
+.main-layout{
+    display:flex;
+    max-width:1200px;
+    margin:60px auto;
+    gap:30px;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar{
+    width:220px;
+    background:#fff;
+    border-radius:16px;
+    padding:20px;
+    box-shadow:0 10px 20px rgba(0,0,0,0.12);
+    height:fit-content;
+}
+
+.sidebar h3{
+    margin-bottom:15px;
+    color:#ff9800;
+    text-align:center;
+}
+
+.sidebar a{
+    display:block;
+    padding:10px 12px;
+    margin-bottom:8px;
+    text-decoration:none;
+    color:#333;
+    border-radius:8px;
+    font-size:14px;
+}
+
+.sidebar a:hover{
+    background:#ff9800;
+    color:#fff;
+}
+
+/* ===== DETAILS ===== */
+.details-container{
+    flex:1;
+    background:#fff;
+    border-radius:16px;
+    padding:30px;
+    box-shadow:0 12px 25px rgba(0,0,0,0.15);
+}
+
+.details-top{
+    display:flex;
+    align-items:center;
+    gap:40px;
+}
+
+.details-image img{
+    width:420px;
+    height:260px;
+    object-fit:cover;
+    border-radius:14px;
+}
+
+.details-action{
+    flex:1;
+    text-align:center;
+}
+
+.details-action h1{
+    color:#ff9800;
+    margin-bottom:15px;
+}
+
+.details-action a{
+    background:#ff9800;
+    color:#fff;
+    padding:12px 30px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.details-action a:hover{
+    background:#e68900;
+}
+
+/* ===== QUICK INFO ===== */
+.quick-info{
+    margin-top:25px;
+    display:flex;
+    justify-content:space-around;
+    background:#fff6e6;
+    padding:15px;
+    border-radius:12px;
+    font-size:14px;
+}
+
+.quick-info div{
+    text-align:center;
+}
+
+.quick-info span{
+    display:block;
+    font-weight:bold;
+    color:#ff9800;
+}
+
+/* ===== DESCRIPTION ===== */
+.details-description{
+    margin-top:30px;
+    text-align:center;
+    color:#555;
+    line-height:1.6;
+}
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+    <div class="brand">
+        <div class="logo-circle">✈</div>
+        <div class="brand-name">Travel-Hub</div>
+    </div>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="login.html">Login</a>
+        <a href="signup.html">Sign Up</a>
+    </div>
+</div>
+
+<div class="main-layout">
+
+    <!-- ===== SIDEBAR ===== -->
+    <div class="sidebar">
+        <h3>Destinations</h3>
+        <a href="mumbai.html">Mumbai</a>
+        <a href="manali.html">Manali</a>
+        <a href="kashmir.html">Kashmir</a>
+        <a href="jaisalmer.html">Jaisalmer</a>
+        <a href="goa.html">Goa</a>
+        <a href="leh-ladakh.html">Leh Ladakh</a>
+        <a href="andaman.html">Andaman</a>
+        <a href="lakshadweep.html">Lakshadweep</a>
+        <a href="udaipur.html">Udaipur</a>
+    </div>
+
+    <!-- ===== MAIN DETAILS ===== -->
+    <div class="details-container">
+
+        <div class="details-top">
+            <div class="details-image">
+                <img src="lakshadweep.webp" alt="Lakshadweep">
+            </div>
+            <div class="details-action">
+                <h1>Lakshadweep</h1>
+                <a href="booking.html">Book Now</a>
+            </div>
+        </div>
+
+        <!-- QUICK INFO -->
+        <div class="quick-info">
+            <div>
+                <span>📍 Location</span>
+                Lakshadweep Islands, India
+            </div>
+            <div>
+                <span>🗓 Best Time</span>
+                October – May
+            </div>
+            <div>
+                <span>⏱ Trip Length</span>
+                4 – 6 Days
+            </div>
+        </div>
+
+        <div class="details-description">
+            <strong>Lakshadweep – Luxury Written in Waves</strong><br><br>
+            Lakshadweep feels exclusive and untouched. Clear lagoons, coral islands,
+            and silence broken only by waves make it feel unreal.
+            <br><br>
+            It’s not a trip—it’s an escape few ever experience.
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

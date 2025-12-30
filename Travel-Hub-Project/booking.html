@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Book Your Trip | Travel-Hub</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Segoe UI", sans-serif;
+}
+
+body{
+    background:
+        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+        url("map-bg.png");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+/* ===== NAVBAR ===== */
+.navbar{
+    width:100%;
+    padding:15px 40px;
+    background:#222;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.brand{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo-circle{
+    width:36px;
+    height:36px;
+    background:#ff9800;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#fff;
+    font-weight:bold;
+}
+
+.brand-name{
+    font-size:22px;
+    font-weight:bold;
+    color:#ff9800;
+}
+
+.navbar a{
+    color:#fff;
+    text-decoration:none;
+    margin-left:25px;
+    font-size:14px;
+}
+
+.navbar a:hover{
+    color:#ff9800;
+}
+
+/* ===== WRAPPER ===== */
+.booking-wrapper{
+    display:flex;
+    justify-content:center;
+    padding:80px 20px;
+}
+
+/* ===== CARD ===== */
+.booking-card{
+    width:100%;
+    max-width:900px;
+    background:#fff;
+    border-radius:22px;
+    overflow:hidden;
+    box-shadow:0 20px 45px rgba(0,0,0,0.35);
+}
+
+/* ===== HEADER ===== */
+.booking-header{
+    background:linear-gradient(135deg,#ff9800,#ff6f00);
+    color:#fff;
+    text-align:center;
+    padding:35px 20px;
+}
+
+.booking-header h1{
+    font-size:30px;
+}
+
+.booking-header p{
+    font-size:14px;
+    opacity:0.9;
+    margin-top:6px;
+}
+
+/* ===== STEPS ===== */
+.steps{
+    display:flex;
+    justify-content:space-around;
+    background:#fff3e0;
+    padding:14px 0;
+    font-size:13px;
+    font-weight:600;
+    color:#ff9800;
+}
+
+/* ===== FORM ===== */
+.booking-form{
+    padding:30px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.booking-form div{
+    display:flex;
+    flex-direction:column;
+}
+
+.booking-form label{
+    font-size:13px;
+    font-weight:600;
+    margin-bottom:6px;
+    color:#333;
+}
+
+.booking-form input,
+.booking-form select{
+    padding:10px 12px;
+    border-radius:8px;
+    border:1px solid #ccc;
+    font-size:14px;
+}
+
+.booking-form input:focus,
+.booking-form select:focus{
+    border-color:#ff9800;
+    outline:none;
+}
+
+.full{
+    grid-column:1 / -1;
+}
+
+/* ===== PRICE TABLE ===== */
+.price-table{
+    grid-column:1 / -1;
+}
+
+.price-table h3{
+    text-align:center;
+    color:#ff9800;
+    margin-bottom:10px;
+}
+
+.price-table table{
+    width:100%;
+    border-collapse:collapse;
+    font-size:14px;
+}
+
+.price-table th,
+.price-table td{
+    border:1px solid #ddd;
+    padding:10px;
+    text-align:center;
+}
+
+.price-table th{
+    background:#ff9800;
+    color:#fff;
+}
+
+.price-table tr:nth-child(even){
+    background:#f9f9f9;
+}
+
+/* ===== TOTAL PRICE ===== */
+.total-box{
+    grid-column:1 / -1;
+    background:#f4f4f4;
+    padding:15px;
+    text-align:center;
+    font-size:18px;
+    font-weight:bold;
+    color:#333;
+    border-left:5px solid #ff9800;
+}
+
+/* ===== BUTTON ===== */
+.booking-form button{
+    grid-column:1 / -1;
+    margin-top:10px;
+    padding:14px;
+    background:#ff9800;
+    color:#fff;
+    border:none;
+    border-radius:30px;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+}
+
+.booking-form button:hover{
+    background:#e68900;
+}
+
+/* ===== TRUST ===== */
+.trust{
+    background:#fafafa;
+    padding:22px;
+    display:flex;
+    justify-content:space-around;
+    text-align:center;
+    font-size:13px;
+    color:#555;
+}
+
+.trust span{
+    display:block;
+    font-weight:700;
+    color:#ff9800;
+    margin-bottom:6px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <div class="brand">
+        <div class="logo-circle">✈</div>
+        <div class="brand-name">Travel-Hub</div>
+    </div>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="login.html">Login</a>
+        <a href="signup.html">Sign Up</a>
+    </div>
+</div>
+
+<!-- BOOKING -->
+<div class="booking-wrapper">
+<div class="booking-card">
+
+    <div class="booking-header">
+        <h1>Book Your Journey</h1>
+        <p>Calculate your trip instantly</p>
+    </div>
+
+    <div class="steps">
+        <div>📍 Choose</div>
+        <div>🧮 Calculate</div>
+        <div>✈ Travel</div>
+    </div>
+
+    <form class="booking-form" onsubmit="return handleBooking()">
+
+        <div>
+            <label>Full Name</label>
+            <input type="text" required>
+        </div>
+
+        <div>
+            <label>Email</label>
+            <input type="email" required>
+        </div>
+
+        <div>
+            <label>Package Type</label>
+            <select id="package" onchange="calculateTotal()">
+                <option value="">Select package</option>
+                <option value="15000">Basic (₹15,000)</option>
+                <option value="25000">Standard (₹25,000)</option>
+                <option value="45000">Premium (₹45,000)</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Number of Travelers</label>
+            <input type="number" id="people" min="1" value="1" onchange="calculateTotal()">
+        </div>
+
+        <div class="price-table">
+            <h3>Package Pricing</h3>
+            <table>
+                <tr><th>Package</th><th>Days</th><th>Price</th></tr>
+                <tr><td>Basic</td><td>3</td><td>₹15,000</td></tr>
+                <tr><td>Standard</td><td>5</td><td>₹25,000</td></tr>
+                <tr><td>Premium</td><td>7</td><td>₹45,000</td></tr>
+            </table>
+        </div>
+
+        <div class="total-box" id="totalPrice">
+            Total Price: ₹0
+        </div>
+
+        <button type="submit">Confirm Booking</button>
+
+    </form>
+
+    <div class="trust">
+        <div><span>✔</span>Trusted</div>
+        <div><span>24/7</span>Support</div>
+        <div><span>100%</span>Secure</div>
+    </div>
+
+</div>
+</div>
+
+<script>
+
+function handleBooking(){
+    window.location.href = "thanku.html";
+    return false;
+}
+
+function calculateTotal(){
+    const packagePrice = document.getElementById("package").value;
+    const people = document.getElementById("people").value;
+
+    if(packagePrice && people){
+        const total = packagePrice * people;
+        document.getElementById("totalPrice").innerText =
+            "Total Price: ₹" + total.toLocaleString("en-IN");
+    }
+}
+</script>
+
+</body>
+</html>
